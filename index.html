@@ -1,7 +1,14 @@
 ---
 layout: default
 ---
-	<h1>{{ site.name }} $$</h1>
+	<h1>{{ site.name }}</h1>
 	
 	<img src="http://www.columbia.edu/~els2178/doritos.jpg">
+	
+	{% for post in site.posts %}	
 		
+		<h3>{{ post.title }}</h3>		
+		
+		<p>{{ content }}</p>
+		
+	{% endfor %}
