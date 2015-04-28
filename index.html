@@ -3,9 +3,4 @@ layout: default
 ---
 	<h1>{{ site.name }}</h1>
 	
-	<img src="http://www.columbia.edu/~els2178/doritos.jpg">
-	
-
-	
-	{% capture mo %}{% include 1776-07-04-fourth.md %}{% endcapture %}
-        {{ mo | markdownify }}
+	{% include_relative _posts/1776-07-04-fourth.md %}
