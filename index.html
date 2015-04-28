@@ -12,3 +12,8 @@ layout: default
 		<p>{{ post.content }}</p>
 		
 	{% endfor %}
+
+<hr />
+	
+	{% capture sample %}{% include_relative _posts/1776-07-04-fourth.md %}{% endcapture %}
+        {{ sample | markdownify }}
